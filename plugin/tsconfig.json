@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "isolatedModules": true,
+    "outDir": "./dist",
+    "declaration": true,
+    "skipLibCheck": true,
+    "paths": { 
+      "virtual:vite-plugin-solid-filesystem-router/routes": ["./src/vinxi/routes.d.ts"]
+    }
+  },
+  "include": [
+    "./src"
+  ]
+}

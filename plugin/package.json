@@ -1,0 +1,63 @@
+{
+  "name": "@edivados/vite-plugin-solid-filesystem-router",
+  "version": "0.1.0",
+  "homepage": "https://github.com/edivados/vite-plugin-solid-filesystem-router",
+  "license": "MIT",
+  "author": {
+    "name": "edivados",
+    "url": "https://github.com/edivados"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edivados/vite-plugin-solid-filesystem-router.git"
+  },
+  "keywords": [
+    "vite",
+    "vite plugin",
+    "vitejs",
+    "vitejs plugin",
+    "vite-plugin",
+    "solid",
+    "solidjs",
+    "router",
+    "filesystem router"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.7",
+    "es-module-lexer": "^1.5.4",
+    "esbuild": "^0.21.5",
+    "fast-glob": "^3.3.2",
+    "micromatch": "^4.0.7",
+    "pathe": "^1.1.2"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8",
+    "vite": "^4 || ^5 || ^6"
+  },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./routes": {
+      "default": "./dist/solid-start/index.jsx",
+      "types": "./dist/solid-start/index.d.ts"
+    },
+    "./vinxi/fs-router": {
+      "default": "./dist/vinxi/fs-router.js",
+      "types": "./dist/vinxi/fs-router.d.ts"
+    }
+  }
+}
